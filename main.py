@@ -24,7 +24,7 @@ def main():
             valid, prefix, number = validate_plate_number(plate)
 
             if not valid:
-                print("❌ Invalid Plate Format.")
+                print(" Invalid Plate Format.")
                 continue
 
             result = decode_plate(prefix)
@@ -33,7 +33,7 @@ def main():
                 city, province = result
                 display_result(plate.upper(), city, province, number)
             else:
-                print("❌ Registration Code Not Found.")
+                print(" Registration Code Not Found.")
 
         elif choice == "2":
             show_database()
@@ -43,7 +43,7 @@ def main():
             break
 
         else:
-            print("❌ Invalid choice. Please try again.")
+            print(" Invalid choice. Please try again.")
 
 
 if __name__ == "__main__":
